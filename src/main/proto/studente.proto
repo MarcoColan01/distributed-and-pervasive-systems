@@ -1,0 +1,20 @@
+message Studente{
+    required string name = 1;
+    required string surname = 2;
+    required int32 year_birth = 3;
+
+    message Residence{
+        required string place = 1;
+    }
+
+    repeated Residence residences = 4;
+
+    message Exam{
+        required string name = 1;
+        required int32 mark = 2;
+        required string date = 3;
+    }
+
+    repeated Exam passed_exams = 5;
+
+}
